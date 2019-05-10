@@ -51,8 +51,8 @@ Set the following environment variables:
 For example:
 
 ```
-export AWS_DEFAULT_REGION=us-east-2
-export TRAINING_COHORT=chicago-fall-2018
+export AWS_DEFAULT_REGION=ap-southeast-1
+export TRAINING_COHORT=bangalore-april-2019-test
 ```
 
 ## 2) Preliminary Bootstraping
@@ -172,3 +172,6 @@ Then you should be able to see the following resources:
 |Hue	| http://emr-master.chicago-fall-2018.training:8888/ |
 |Ganglia | http://emr-master.chicago-fall-2018.training/ganglia/ |
 
+NOTES:
+1)delete bangalore-april-2019-test-airflow-password
+2) Reusing AMI

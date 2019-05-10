@@ -22,7 +22,7 @@ resource "aws_emr_cluster" "training_cluster" {
     ignore_changes = ["step"]
   }
 
-  ebs_root_volume_size = 40
+  ebs_root_volume_size = 10
 
   ec2_attributes {
     subnet_id                         = "${var.subnet_id}"
@@ -48,7 +48,7 @@ resource "aws_emr_cluster" "training_cluster" {
     instance_type = "${var.core_type}"
     instance_count = "${var.core_count}"
     ebs_config {
-      size = "500"
+      size = "10"
       type = "gp2"
     }
   }

@@ -33,8 +33,8 @@ module "training_cluster" {
   vpc_id = "${data.terraform_remote_state.base_networking.vpc_id}"
   subnet_id = "${data.terraform_remote_state.base_networking.private_subnet_ids[0]}"
   dns_zone_id = "${data.terraform_remote_state.base_networking.dns_zone_id}"
-  master_type="m4.xlarge"
-  core_type="m4.large"
-  core_count="4"
+  master_type="m1.medium"
+  core_type="m1.medium"
+  core_count="2"
   bastion_security_group_id="${data.terraform_remote_state.bastion.bastion_security_group_id}"
 }
